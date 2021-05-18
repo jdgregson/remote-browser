@@ -14,6 +14,9 @@ then pin the PWA to their home screen. There is no authentication currently as
 it is assumed that each Remote Browser instance will be firewalled off and only
 accessible to the intended user via a VPN or SSH tunnel.
 
+![alt text](https://github.com/jdgregson/remote-browser/blob/c9b5308880264fdfbb1208457ed3015a1989b314/docs/demo.gif "Remote Browser Demo")
+
+
 ## Features
 
 ### Screenshots
