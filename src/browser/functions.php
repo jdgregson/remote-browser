@@ -77,7 +77,7 @@ function new_id($length = 32) {
 
 function html_head($extra_tag = "") {
     global $app_root;
-?>
+    ?>
     <!DOCTYPE html>
     <html>
 
@@ -100,7 +100,7 @@ function html_head($extra_tag = "") {
             echo $extra_tag;
         } ?>
     </head>
-<?php
+    <?php
 }
 
 function browser_bar() {
@@ -109,7 +109,7 @@ function browser_bar() {
     global $method;
     global $session_id;
     global $url;
-?>
+    ?>
     <div id="browser-bar">
         <form method="POST" action="<?php echo $app_root . "/?method=" . $method . "&sid=" . $session_id; ?>">
             <select name="screenshot_size">
@@ -148,7 +148,7 @@ function tabs_page() {
             $tab_title = "blank";
         }
         $tab_url = get_base_url() . "?sid=" . $tab_session_id . "&method=" . $session["method"];
-    ?>
+        ?>
         <div class="list-entry<?php echo (isset($_GET["sid"]) && $_GET["sid"] === $tab_session_id) ? " selected" : ""; ?>">
             <a class="list-entry-link" href="<?php echo $tab_url; ?>">
                 <span class="list-entry-title"><?php echo $tab_title; ?></span>
@@ -157,7 +157,7 @@ function tabs_page() {
                 <span class="list-entry-icon">❌</span>
             </a>
         </div>
-    <?php
+        <?php
     }
     ?>
     <br>
@@ -192,7 +192,7 @@ function tabs_page() {
             <span class="list-entry-title">Reset Remote Browser</span>
         </a>
     </div>
-<?php
+    <?php
     echo "</div>";
 }
 
