@@ -1,0 +1,13 @@
+{
+  "name": "Remote Browser",
+  "short_name": "Browser",
+  "lang": "en-US",
+  "start_url": "/browser/index.php",
+  "display": "standalone",
+  "scope": "https://remote-browser.jdgregson.com/browser/",
+  "icons": [
+    {
+      "src": "/browser/art/touch-icon-iphone-retina.png"
+    }
+  ]
+}

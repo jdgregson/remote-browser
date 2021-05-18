@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Received ABORT"
+echo "Killing Firefox for abort"
+killall -u browser -9 firefox

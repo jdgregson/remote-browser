@@ -1,0 +1,6 @@
+#!/bin/bash
+
+killall -9 firefox
+> /opt/browser/sessions
+rm -fr /opt/browser/content/*
+rm -fr /home/browser/.mozilla

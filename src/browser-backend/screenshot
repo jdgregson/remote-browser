@@ -1,0 +1,8 @@
+#!/bin/bash
+
+useragent=$(cat /opt/browser/useragent)
+echo "user_pref('general.useragent.override', '$useragent');" > /home/browser/.mozilla/firefox/*.default-release/user.js
+killall -u browser -9 firefox
+firefox -screenshot "$3" "$1" -no-remote -window-size=$2 --private-window
+chmod 777 "$3"
+killall -u browser -9 firefox

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+useragent=$(cat /opt/browser/useragent)
+lynx -dump "$1" -width=60 -useragent="$useragent" > "$2"
+echo -e "\n\n<script>alert('A wild Canary appears (in text content)!');</script>" >> "$2"
+chmod 777 "$2"
